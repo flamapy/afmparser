@@ -1,7 +1,7 @@
 import sys
 from antlr4 import *
-from AFMLexer import AFMLexer
-from AFMParser import AFMParser
+from .AFMLexer import AFMLexer
+from .AFMParser import AFMParser
 
 
 def get_tree(argv):
@@ -10,7 +10,6 @@ def get_tree(argv):
     stream = CommonTokenStream(lexer)
     parser = AFMParser(stream)
     tree = parser.feature_model()
-    print(tree.toStringTree(tree, parser))
     return tree
 
 
