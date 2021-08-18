@@ -3,7 +3,8 @@ grammar AFM;
 //parser rules
 
 //model
-feature_model: relationships_block attributes_block?;
+feature_model:
+	relationships_block attributes_block? constraints_block?;
 
 //relationships block
 
@@ -45,7 +46,73 @@ attribute_null_value: value_spec;
 
 value_spec: (WORD | LOWERCASE | INT | DOUBLE | STRING);
 
+//constraints block
+
+constraints_block: '%Constraints' constraint_spec*;
+
+constraint_spec: brackets_spec | simple_spec;
+brackets_spec:
+	SPACE? WORD SPACE? '{' SPACE? simple_spec* SPACE? '}' SPACE?;
+simple_spec: SPACE? expression SPACE? ';' SPACE?;
+
+expression:
+	SPACE? '(' expression ')' SPACE?			# parenthesisExp
+	| NOT expression							# notExp
+	| expression arithmetic_operator expression	# arithmeticExp
+	| expression relational_operator expression	# relationalExp
+	| expression AND expression					# andExp
+	| expression OR expression					# orExp
+	| expression logical_operator expression	# logicalExp
+	| SPACE? (variable | number) SPACE?			# atom;
+
+logical_operator: IFF | IMPLIES | REQUIRES | EXCLUDES;
+arithmetic_operator: ADD | SUB | MULT | DIV | MOD | POW | ASIG;
+relational_operator:
+	HIGHER_THAN
+	| LOWER_THAN
+	| HIGHER_EQUAL_THAN
+	| LOWER_EQUAL_THAN
+	| EQUAL
+	| DISTINCT;
+number: INT | DOUBLE;
+variable: WORD ('.' LOWERCASE)? | LOWERCASE;
 //lexer rules
+
+//arithmetic operators	
+ADD: '+';
+SUB: '-';
+MULT: '*';
+DIV: '/';
+MOD: '%';
+POW: '^';
+ASIG: '=';
+
+//prefix operators
+ABS: 'abs';
+MAX: 'max';
+MIN: 'min';
+COS: 'cos';
+SIN: 'sin';
+SUM: 'sum';
+
+//logical operators
+
+AND: 'AND';
+OR: 'OR';
+NOT: 'NOT';
+IFF: 'IFF';
+IMPLIES: 'IMPLIES';
+REQUIRES: 'REQUIRES';
+EXCLUDES: 'EXCLUDES';
+
+//relational operators
+HIGHER_THAN: '>';
+LOWER_THAN: '<';
+HIGHER_EQUAL_THAN: '>=';
+LOWER_EQUAL_THAN: '<=';
+EQUAL: '==';
+DISTINCT: '!=';
+
 INTEGER: 'Integer';
 
 LOWERCASE: [a-z][a-z0-9]*;
