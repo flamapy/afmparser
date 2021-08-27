@@ -48,7 +48,7 @@ value_spec: (WORD | LOWERCASE | INT | DOUBLE | STRING);
 
 //constraints block
 
-constraints_block: '%Constraints' constraint_spec*;
+constraints_block: '%Constraints' constraint_spec*;	
 
 constraint_spec: brackets_spec | simple_spec;
 brackets_spec:
@@ -57,9 +57,9 @@ simple_spec: SPACE? expression SPACE? ';' SPACE?;
 
 expression:
 	SPACE? '(' expression ')' SPACE?			# parenthesisExp
-	| NOT expression							# notExp
 	| expression arithmetic_operator expression	# arithmeticExp
 	| expression relational_operator expression	# relationalExp
+	| NOT expression							# notExp
 	| expression AND expression					# andExp
 	| expression OR expression					# orExp
 	| expression logical_operator expression	# logicalExp

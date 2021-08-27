@@ -135,16 +135,16 @@ def serializedATN():
         buf.write("\u010d\3\2\2\2\u010d\u010e\7\17\2\2\u010e\u010f\5\60\31")
         buf.write("\2\u010f\u0111\7\20\2\2\u0110\u0112\7\61\2\2\u0111\u0110")
         buf.write("\3\2\2\2\u0111\u0112\3\2\2\2\u0112\u0120\3\2\2\2\u0113")
-        buf.write("\u0114\7 \2\2\u0114\u0120\5\60\31\t\u0115\u0117\7\61\2")
+        buf.write("\u0114\7 \2\2\u0114\u0120\5\60\31\7\u0115\u0117\7\61\2")
         buf.write("\2\u0116\u0115\3\2\2\2\u0116\u0117\3\2\2\2\u0117\u011a")
         buf.write("\3\2\2\2\u0118\u011b\5:\36\2\u0119\u011b\58\35\2\u011a")
         buf.write("\u0118\3\2\2\2\u011a\u0119\3\2\2\2\u011b\u011d\3\2\2\2")
         buf.write("\u011c\u011e\7\61\2\2\u011d\u011c\3\2\2\2\u011d\u011e")
         buf.write("\3\2\2\2\u011e\u0120\3\2\2\2\u011f\u0109\3\2\2\2\u011f")
         buf.write("\u0113\3\2\2\2\u011f\u0116\3\2\2\2\u0120\u0135\3\2\2\2")
-        buf.write("\u0121\u0122\f\b\2\2\u0122\u0123\5\64\33\2\u0123\u0124")
-        buf.write("\5\60\31\t\u0124\u0134\3\2\2\2\u0125\u0126\f\7\2\2\u0126")
-        buf.write("\u0127\5\66\34\2\u0127\u0128\5\60\31\b\u0128\u0134\3\2")
+        buf.write("\u0121\u0122\f\t\2\2\u0122\u0123\5\64\33\2\u0123\u0124")
+        buf.write("\5\60\31\n\u0124\u0134\3\2\2\2\u0125\u0126\f\b\2\2\u0126")
+        buf.write("\u0127\5\66\34\2\u0127\u0128\5\60\31\t\u0128\u0134\3\2")
         buf.write("\2\2\u0129\u012a\f\6\2\2\u012a\u012b\7\36\2\2\u012b\u0134")
         buf.write("\5\60\31\7\u012c\u012d\f\5\2\2\u012d\u012e\7\37\2\2\u012e")
         buf.write("\u0134\5\60\31\6\u012f\u0130\f\4\2\2\u0130\u0131\5\62")
@@ -1840,7 +1840,7 @@ class AFMParser ( Parser ):
                 self.state = 273
                 self.match(AFMParser.NOT)
                 self.state = 274
-                self.expression(7)
+                self.expression(5)
                 pass
 
             elif la_ == 3:
@@ -1896,26 +1896,26 @@ class AFMParser ( Parser ):
                         localctx = AFMParser.ArithmeticExpContext(self, AFMParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 287
-                        if not self.precpred(self._ctx, 6):
+                        if not self.precpred(self._ctx, 7):
                             from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 6)")
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 7)")
                         self.state = 288
                         self.arithmetic_operator()
                         self.state = 289
-                        self.expression(7)
+                        self.expression(8)
                         pass
 
                     elif la_ == 2:
                         localctx = AFMParser.RelationalExpContext(self, AFMParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 291
-                        if not self.precpred(self._ctx, 5):
+                        if not self.precpred(self._ctx, 6):
                             from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 6)")
                         self.state = 292
                         self.relational_operator()
                         self.state = 293
-                        self.expression(6)
+                        self.expression(7)
                         pass
 
                     elif la_ == 3:
@@ -2239,11 +2239,11 @@ class AFMParser ( Parser ):
 
     def expression_sempred(self, localctx:ExpressionContext, predIndex:int):
             if predIndex == 0:
-                return self.precpred(self._ctx, 6)
+                return self.precpred(self._ctx, 7)
          
 
             if predIndex == 1:
-                return self.precpred(self._ctx, 5)
+                return self.precpred(self._ctx, 6)
          
 
             if predIndex == 2:
