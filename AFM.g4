@@ -11,14 +11,14 @@ feature_model:
 relationships_block: '%Relationships' relationship_spec*;
 
 relationship_spec:
-	init_spec (non_cardinal_spec | cardinal_spec) ';';
+	init_spec (non_cardinal_spec | cardinal_spec)+ ';';
 
 init_spec: SPACE? WORD SPACE? ':' SPACE?;
 
 obligatory_spec: SPACE? WORD SPACE?;
 optional_spec: SPACE? '[' WORD ']' SPACE?;
 
-non_cardinal_spec: (obligatory_spec | optional_spec)+;
+non_cardinal_spec: (obligatory_spec | optional_spec);
 
 cardinality: '[' INT ',' INT ']';
 cardinal_spec:

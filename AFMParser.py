@@ -18,10 +18,10 @@ def serializedATN():
         buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
         buf.write("\t\31\4\32\t\32\4\33\t\33\4\34\t\34\4\35\t\35\4\36\t\36")
         buf.write("\3\2\3\2\5\2?\n\2\3\2\5\2B\n\2\3\3\3\3\7\3F\n\3\f\3\16")
-        buf.write("\3I\13\3\3\4\3\4\3\4\5\4N\n\4\3\4\3\4\3\5\5\5S\n\5\3\5")
-        buf.write("\3\5\5\5W\n\5\3\5\3\5\5\5[\n\5\3\6\5\6^\n\6\3\6\3\6\5")
-        buf.write("\6b\n\6\3\7\5\7e\n\7\3\7\3\7\3\7\3\7\5\7k\n\7\3\b\3\b")
-        buf.write("\6\bo\n\b\r\b\16\bp\3\t\3\t\3\t\3\t\3\t\3\t\3\n\5\nz\n")
+        buf.write("\3I\13\3\3\4\3\4\3\4\6\4N\n\4\r\4\16\4O\3\4\3\4\3\5\5")
+        buf.write("\5U\n\5\3\5\3\5\5\5Y\n\5\3\5\3\5\5\5]\n\5\3\6\5\6`\n\6")
+        buf.write("\3\6\3\6\5\6d\n\6\3\7\5\7g\n\7\3\7\3\7\3\7\3\7\5\7m\n")
+        buf.write("\7\3\b\3\b\5\bq\n\b\3\t\3\t\3\t\3\t\3\t\3\t\3\n\5\nz\n")
         buf.write("\n\3\n\3\n\5\n~\n\n\3\n\3\n\6\n\u0082\n\n\r\n\16\n\u0083")
         buf.write("\3\n\3\n\3\13\3\13\7\13\u008a\n\13\f\13\16\13\u008d\13")
         buf.write("\13\3\f\3\f\5\f\u0091\n\f\3\f\3\f\5\f\u0095\n\f\3\f\3")
@@ -47,8 +47,8 @@ def serializedATN():
         buf.write("\36\3\36\5\36\u0144\n\36\3\36\5\36\u0147\n\36\3\36\2\3")
         buf.write("\60\37\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(*,")
         buf.write(".\60\62\64\668:\2\7\3\2,\60\3\2!$\3\2\21\27\3\2%*\3\2")
-        buf.write("./\2\u0162\2<\3\2\2\2\4C\3\2\2\2\6J\3\2\2\2\bR\3\2\2\2")
-        buf.write("\n]\3\2\2\2\fd\3\2\2\2\16n\3\2\2\2\20r\3\2\2\2\22y\3\2")
+        buf.write("./\2\u0162\2<\3\2\2\2\4C\3\2\2\2\6J\3\2\2\2\bT\3\2\2\2")
+        buf.write("\n_\3\2\2\2\ff\3\2\2\2\16p\3\2\2\2\20r\3\2\2\2\22y\3\2")
         buf.write("\2\2\24\u0087\3\2\2\2\26\u008e\3\2\2\2\30\u00a9\3\2\2")
         buf.write("\2\32\u00af\3\2\2\2\34\u00b1\3\2\2\2\36\u00bd\3\2\2\2")
         buf.write(" \u00c9\3\2\2\2\"\u00d5\3\2\2\2$\u00d7\3\2\2\2&\u00d9")
@@ -59,18 +59,18 @@ def serializedATN():
         buf.write("@B\5(\25\2A@\3\2\2\2AB\3\2\2\2B\3\3\2\2\2CG\7\3\2\2DF")
         buf.write("\5\6\4\2ED\3\2\2\2FI\3\2\2\2GE\3\2\2\2GH\3\2\2\2H\5\3")
         buf.write("\2\2\2IG\3\2\2\2JM\5\b\5\2KN\5\16\b\2LN\5\22\n\2MK\3\2")
-        buf.write("\2\2ML\3\2\2\2NO\3\2\2\2OP\7\4\2\2P\7\3\2\2\2QS\7\61\2")
-        buf.write("\2RQ\3\2\2\2RS\3\2\2\2ST\3\2\2\2TV\7-\2\2UW\7\61\2\2V")
-        buf.write("U\3\2\2\2VW\3\2\2\2WX\3\2\2\2XZ\7\5\2\2Y[\7\61\2\2ZY\3")
-        buf.write("\2\2\2Z[\3\2\2\2[\t\3\2\2\2\\^\7\61\2\2]\\\3\2\2\2]^\3")
-        buf.write("\2\2\2^_\3\2\2\2_a\7-\2\2`b\7\61\2\2a`\3\2\2\2ab\3\2\2")
-        buf.write("\2b\13\3\2\2\2ce\7\61\2\2dc\3\2\2\2de\3\2\2\2ef\3\2\2")
-        buf.write("\2fg\7\6\2\2gh\7-\2\2hj\7\7\2\2ik\7\61\2\2ji\3\2\2\2j")
-        buf.write("k\3\2\2\2k\r\3\2\2\2lo\5\n\6\2mo\5\f\7\2nl\3\2\2\2nm\3")
-        buf.write("\2\2\2op\3\2\2\2pn\3\2\2\2pq\3\2\2\2q\17\3\2\2\2rs\7\6")
-        buf.write("\2\2st\7.\2\2tu\7\b\2\2uv\7.\2\2vw\7\7\2\2w\21\3\2\2\2")
-        buf.write("xz\7\61\2\2yx\3\2\2\2yz\3\2\2\2z{\3\2\2\2{}\5\20\t\2|")
-        buf.write("~\7\61\2\2}|\3\2\2\2}~\3\2\2\2~\177\3\2\2\2\177\u0081")
+        buf.write("\2\2ML\3\2\2\2NO\3\2\2\2OM\3\2\2\2OP\3\2\2\2PQ\3\2\2\2")
+        buf.write("QR\7\4\2\2R\7\3\2\2\2SU\7\61\2\2TS\3\2\2\2TU\3\2\2\2U")
+        buf.write("V\3\2\2\2VX\7-\2\2WY\7\61\2\2XW\3\2\2\2XY\3\2\2\2YZ\3")
+        buf.write("\2\2\2Z\\\7\5\2\2[]\7\61\2\2\\[\3\2\2\2\\]\3\2\2\2]\t")
+        buf.write("\3\2\2\2^`\7\61\2\2_^\3\2\2\2_`\3\2\2\2`a\3\2\2\2ac\7")
+        buf.write("-\2\2bd\7\61\2\2cb\3\2\2\2cd\3\2\2\2d\13\3\2\2\2eg\7\61")
+        buf.write("\2\2fe\3\2\2\2fg\3\2\2\2gh\3\2\2\2hi\7\6\2\2ij\7-\2\2")
+        buf.write("jl\7\7\2\2km\7\61\2\2lk\3\2\2\2lm\3\2\2\2m\r\3\2\2\2n")
+        buf.write("q\5\n\6\2oq\5\f\7\2pn\3\2\2\2po\3\2\2\2q\17\3\2\2\2rs")
+        buf.write("\7\6\2\2st\7.\2\2tu\7\b\2\2uv\7.\2\2vw\7\7\2\2w\21\3\2")
+        buf.write("\2\2xz\7\61\2\2yx\3\2\2\2yz\3\2\2\2z{\3\2\2\2{}\5\20\t")
+        buf.write("\2|~\7\61\2\2}|\3\2\2\2}~\3\2\2\2~\177\3\2\2\2\177\u0081")
         buf.write("\7\t\2\2\u0080\u0082\5\n\6\2\u0081\u0080\3\2\2\2\u0082")
         buf.write("\u0083\3\2\2\2\u0083\u0081\3\2\2\2\u0083\u0084\3\2\2\2")
         buf.write("\u0084\u0085\3\2\2\2\u0085\u0086\7\n\2\2\u0086\23\3\2")
@@ -158,8 +158,8 @@ def serializedATN():
         buf.write("9\3\2\2\2\u0140\u0143\7-\2\2\u0141\u0142\7\f\2\2\u0142")
         buf.write("\u0144\7,\2\2\u0143\u0141\3\2\2\2\u0143\u0144\3\2\2\2")
         buf.write("\u0144\u0147\3\2\2\2\u0145\u0147\7,\2\2\u0146\u0140\3")
-        buf.write("\2\2\2\u0146\u0145\3\2\2\2\u0147;\3\2\2\2\65>AGMRVZ]a")
-        buf.write("djnpy}\u0083\u008b\u0090\u0094\u0098\u009c\u00a0\u00a4")
+        buf.write("\2\2\2\u0146\u0145\3\2\2\2\u0147;\3\2\2\2\65>AGMOTX\\")
+        buf.write("_cflpy}\u0083\u008b\u0090\u0094\u0098\u009c\u00a0\u00a4")
         buf.write("\u00af\u00b7\u00bd\u00c1\u00c6\u00cc\u00d0\u00df\u00e4")
         buf.write("\u00e7\u00eb\u00ef\u00f4\u00f8\u00fc\u00ff\u0103\u0107")
         buf.write("\u010b\u0111\u0116\u011a\u011d\u011f\u0133\u0135\u0143")
@@ -410,12 +410,18 @@ class AFMParser ( Parser ):
             return self.getTypedRuleContext(AFMParser.Init_specContext,0)
 
 
-        def non_cardinal_spec(self):
-            return self.getTypedRuleContext(AFMParser.Non_cardinal_specContext,0)
+        def non_cardinal_spec(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(AFMParser.Non_cardinal_specContext)
+            else:
+                return self.getTypedRuleContext(AFMParser.Non_cardinal_specContext,i)
 
 
-        def cardinal_spec(self):
-            return self.getTypedRuleContext(AFMParser.Cardinal_specContext,0)
+        def cardinal_spec(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(AFMParser.Cardinal_specContext)
+            else:
+                return self.getTypedRuleContext(AFMParser.Cardinal_specContext,i)
 
 
         def getRuleIndex(self):
@@ -428,25 +434,36 @@ class AFMParser ( Parser ):
 
         localctx = AFMParser.Relationship_specContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_relationship_spec)
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 72
             self.init_spec()
-            self.state = 75
+            self.state = 75 
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
-            if la_ == 1:
-                self.state = 73
-                self.non_cardinal_spec()
-                pass
+            _la = self._input.LA(1)
+            while True:
+                self.state = 75
+                self._errHandler.sync(self)
+                la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
+                if la_ == 1:
+                    self.state = 73
+                    self.non_cardinal_spec()
+                    pass
 
-            elif la_ == 2:
-                self.state = 74
-                self.cardinal_spec()
-                pass
+                elif la_ == 2:
+                    self.state = 74
+                    self.cardinal_spec()
+                    pass
 
 
-            self.state = 77
+                self.state = 77 
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << AFMParser.T__3) | (1 << AFMParser.WORD) | (1 << AFMParser.SPACE))) != 0)):
+                    break
+
+            self.state = 79
             self.match(AFMParser.T__1)
         except RecognitionException as re:
             localctx.exception = re
@@ -485,31 +502,31 @@ class AFMParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 80
-            self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            if _la==AFMParser.SPACE:
-                self.state = 79
-                self.match(AFMParser.SPACE)
-
-
             self.state = 82
-            self.match(AFMParser.WORD)
-            self.state = 84
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==AFMParser.SPACE:
-                self.state = 83
+                self.state = 81
                 self.match(AFMParser.SPACE)
 
 
+            self.state = 84
+            self.match(AFMParser.WORD)
             self.state = 86
-            self.match(AFMParser.T__2)
-            self.state = 88
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
+            _la = self._input.LA(1)
+            if _la==AFMParser.SPACE:
+                self.state = 85
+                self.match(AFMParser.SPACE)
+
+
+            self.state = 88
+            self.match(AFMParser.T__2)
+            self.state = 90
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
             if la_ == 1:
-                self.state = 87
+                self.state = 89
                 self.match(AFMParser.SPACE)
 
 
@@ -550,21 +567,21 @@ class AFMParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 91
+            self.state = 93
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==AFMParser.SPACE:
-                self.state = 90
+                self.state = 92
                 self.match(AFMParser.SPACE)
 
 
-            self.state = 93
-            self.match(AFMParser.WORD)
             self.state = 95
+            self.match(AFMParser.WORD)
+            self.state = 97
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,8,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,9,self._ctx)
             if la_ == 1:
-                self.state = 94
+                self.state = 96
                 self.match(AFMParser.SPACE)
 
 
@@ -605,25 +622,25 @@ class AFMParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 98
+            self.state = 100
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==AFMParser.SPACE:
-                self.state = 97
+                self.state = 99
                 self.match(AFMParser.SPACE)
 
 
-            self.state = 100
-            self.match(AFMParser.T__3)
-            self.state = 101
-            self.match(AFMParser.WORD)
             self.state = 102
-            self.match(AFMParser.T__4)
+            self.match(AFMParser.T__3)
+            self.state = 103
+            self.match(AFMParser.WORD)
             self.state = 104
+            self.match(AFMParser.T__4)
+            self.state = 106
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,10,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,11,self._ctx)
             if la_ == 1:
-                self.state = 103
+                self.state = 105
                 self.match(AFMParser.SPACE)
 
 
@@ -642,18 +659,12 @@ class AFMParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def obligatory_spec(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(AFMParser.Obligatory_specContext)
-            else:
-                return self.getTypedRuleContext(AFMParser.Obligatory_specContext,i)
+        def obligatory_spec(self):
+            return self.getTypedRuleContext(AFMParser.Obligatory_specContext,0)
 
 
-        def optional_spec(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(AFMParser.Optional_specContext)
-            else:
-                return self.getTypedRuleContext(AFMParser.Optional_specContext,i)
+        def optional_spec(self):
+            return self.getTypedRuleContext(AFMParser.Optional_specContext,0)
 
 
         def getRuleIndex(self):
@@ -666,32 +677,21 @@ class AFMParser ( Parser ):
 
         localctx = AFMParser.Non_cardinal_specContext(self, self._ctx, self.state)
         self.enterRule(localctx, 12, self.RULE_non_cardinal_spec)
-        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 108 
+            self.state = 110
             self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            while True:
+            la_ = self._interp.adaptivePredict(self._input,12,self._ctx)
+            if la_ == 1:
                 self.state = 108
-                self._errHandler.sync(self)
-                la_ = self._interp.adaptivePredict(self._input,11,self._ctx)
-                if la_ == 1:
-                    self.state = 106
-                    self.obligatory_spec()
-                    pass
+                self.obligatory_spec()
+                pass
 
-                elif la_ == 2:
-                    self.state = 107
-                    self.optional_spec()
-                    pass
+            elif la_ == 2:
+                self.state = 109
+                self.optional_spec()
+                pass
 
-
-                self.state = 110 
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << AFMParser.T__3) | (1 << AFMParser.WORD) | (1 << AFMParser.SPACE))) != 0)):
-                    break
 
         except RecognitionException as re:
             localctx.exception = re
