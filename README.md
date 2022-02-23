@@ -1,5 +1,5 @@
 # AFM-parser
-##This is an antlr4 implementation of the old fama plain-text format built from scratch, developed for retrocompatibility purposes.
+## This is an antlr4 implementation of the old fama plain-text format built from scratch, developed for retrocompatibility purposes.
 
 %Relationships
 Home : ControlSystemLighting [AntiTheftAlarm] [MoviePlayer] [Internet] [Contents] [ADA] ;  
