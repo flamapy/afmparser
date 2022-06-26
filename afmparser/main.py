@@ -1,7 +1,6 @@
-import sys
-from antlr4 import *
-from .AFMLexer import AFMLexer
-from .AFMParser import AFMParser
+from antlr4 import CommonTokenStream, FileStream
+from afmparser.AFMLexer import AFMLexer
+from afmparser.AFMParser import AFMParser
 
 
 def get_tree(argv):
