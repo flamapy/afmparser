@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="afmparser",
-    version="0.2.0.dev0",
+    version="0.2.0.dev1",
     description="This module provides a get_tree function to obtain an ANTLR4 parse-tree from a AFM-defined feature model",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -22,5 +22,7 @@ setup(
     ],
     zip_safe=True,
     python_requires=">=3.0",
-    install_requires=["antlr4-python3-runtime==4.9.3"],
+    install_requires=[
+        "antlr4-python3-runtime==4.7.2",
+    ],
 )
