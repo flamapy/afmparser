@@ -35,13 +35,11 @@ jobs:
           tag_name: ${{ steps.get_variables.outputs.VERSION }}
           body: ${{ steps.changelog.outputs.changes }}
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
 
       - name: Install dependencies and ANTLR requirements
         run: |
+          sudo apt-get update
+          sudo apt-get install -y python3 python3-pip
           pip install antlr4-tools twine build
 
       - name: Compile
