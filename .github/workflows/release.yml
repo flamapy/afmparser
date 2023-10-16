@@ -42,8 +42,7 @@ jobs:
 
       - name: Install dependencies and ANTLR requirements
         run: |
-          sudo apt-get install antlr4
-          pip install twine build
+          pip install antlr4-tools twine build
 
       - name: Compile
         run: make build
