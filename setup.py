@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setup(
     name="afmparser",
-    version="0.2.0.dev1",
+    version="1.0.1",
     description="This module provides a get_tree function to obtain an ANTLR4 parse-tree from a AFM-defined feature model",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/diverso-lab/afm-diverso",
-    author="Pablo Pazo Jiménez",
-    author_email="pablopazojim@gmail.com",
+    author="José A. Galindo",
+    author_email="jagalindo@us.es",
     # To find more licenses or classifiers go to: https://pypi.org/classifiers/
     license="GNU General Public License v3 (GPLv3)",
     packages=['afmparser'],
